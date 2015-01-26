@@ -19,11 +19,11 @@ Other values for DEBUG to try include:
 
 To format, lint, and test,
 
-    # npm install -g gulp
     npm test
 
 To watch the source for changes and run the tests automatically,
 
+    # npm install -g gulp
     gulp
 
 Docker
