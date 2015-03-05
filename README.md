@@ -11,6 +11,10 @@ To run it on your local machine,
     npm install
     DEBUG='api:server' npm start
 
+On Windows, the cooresponding command is,
+    
+    set DEBUG=api:server & npm start
+
 For more information on debugging, see the [debug module](https://www.npmjs.com/package/express-generator).
 Other values for DEBUG to try include:
 
