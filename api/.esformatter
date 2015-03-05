@@ -18,7 +18,7 @@
     }
   },
   "whiteSpace": {
-    "removeTrailing": 0,
+    "removeTrailing": 1,
     "before": {
       "ArrayExpressionClosing": 1,
       "ObjectExpressionClosingBrace": 1
