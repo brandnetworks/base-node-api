@@ -1,10 +1,11 @@
 'use strict';
 
-var gulp, esformatter, esformatterOptions, jshint, jscs, mocha, scripts;
+var gulp, esformatter, esformatterOptions, eol, jshint, jscs, mocha, scripts;
 
 gulp = require('gulp');
 esformatter = require('gulp-esformatter');
 esformatterOptions = JSON.parse(require('fs').readFileSync('./.esformatter'));
+eol = require('gulp-eol');
 jshint = require('gulp-jshint');
 jscs = require('gulp-jscs');
 mocha = require('gulp-mocha');
@@ -16,6 +17,7 @@ gulp.task('format', function () {
   return gulp.src(scripts, {
     base: './'
   })
+    .pipe(eol('\n', true))
     .pipe(esformatter(esformatterOptions))
     .pipe(gulp.dest('.'));
 });
