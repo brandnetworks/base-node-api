@@ -15,7 +15,7 @@ On Windows, the corresponding command is,
 
     set DEBUG=api:server & npm start
 
-For more information on debugging, see the [debug module](https://www.npmjs.com/package/express-generator).
+For more information on debugging, see the [debug module](https://www.npmjs.com/package/debug).
 Other values for DEBUG to try include:
 
 ```
